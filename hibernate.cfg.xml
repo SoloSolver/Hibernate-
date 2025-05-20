@@ -7,9 +7,9 @@
     <session-factory>
 <!--         Database configuration settings-->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/mlyhiber</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">root</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/[yourDataBasename]</property>
+        <property name="connection.username">[your db user name]</property>
+        <property name="connection.password">[your db uer password]</property>
 
 <!--        Hibernate configuration settings -->
                                             <!-- dialect is the way to talk with different databases all data base have different different dialect -->
@@ -20,6 +20,6 @@
 
         <!-- Entity class mapping -->
 <!--         <mapping resource="" />  used to map xml file  -->
-        <mapping class="Main"/>   <!-- used to map class -->
+        <mapping class="[provide class name which one you want  to mapp ]"/>   <!-- used to map class -->
     </session-factory>
 </hibernate-configuration>
